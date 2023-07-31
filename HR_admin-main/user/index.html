@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Add these in the head section of your HTML -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+</head>
+<body>
+    <div class="usercontainer">
+        <div class="confirmBox">
+            <div class="text"></div>
+            <div class="btns">
+                <button class="btn cancel-btn cancel"><i class="fas fa-times"></i> Cancel</button>
+                <button class="btn confirm-btn confirm"><i class="fas fa-trash-alt"></i> Confirm</button>
+            </div>
+        </div>
+        <div class="filter">
+            <input type="text" name="filterinput" id="filterinput" placeholder="eg: 0001 or name">
+            <button type="button" class="filter-btn all">All</button>
+            <button type="button" class="filter-btn active-btn">Active</button>
+            <button type="button" class="filter-btn ot-btn">OT</button>
+            <button type="button" class="filter-btn leave-btn">Leave</button>
+        </div>
+        <div class="detailsBox">
+            <div class="user" index="0001">
+                <div class="options">
+                    <div class="opt"><input type="checkbox" name="usercheck" id="usercheck"></div>
+                    <div class="opt"><p class="indicate active">Active</p></div>
+                    <div class="opt"><i class="del fas fa-trash delete-icon"></i></div>
+                </div>
+                <div class="mid">
+                    <div class="prof">
+                        <img src="img/female.png" alt="">
+                    </div>
+                    <div class="username">Elia issum</div>
+                </div>
+                <div class="bottoms">
+                    <div class="detBox">
+                        <div class="dettop">
+                            <div class="type">
+                                <span>Work Type</span> <br>
+                                <p>Daily Wager</p>
+                            </div>
+                            <div class="doj">
+                                <span>Date Hired</span>
+                                <p>17/03/2023</p>
+                            </div>
+                        </div>
+                        <div class="detbottom">
+                            <p class="mail"><i class="fas fa-envelope"></i>&nbsp; Sabariharish@gmail.com</p>
+                            <p class="phone"><i class="fas fa-phone"></i>&nbsp; +91 9384460843</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- user 2 -->
+            <div class="user" index="0002">
+                <div class="options">
+                    <div class="opt"><input type="checkbox" name="usercheck" id="usercheck"></div>
+                    <div class="opt"><p class="indicate ot">OT</p></i></div>
+                    <div class="opt"><i class="del fas fa-trash delete-icon"></i></div>
+                </div>
+                <div class="mid">
+                    <div class="prof">
+                        <img src="img/male.png" alt="">
+                    </div>
+                    <div class="username">John Doe</div>
+                </div>
+                <div class="bottoms">
+                    <div class="detBox">
+                        <div class="dettop">
+                            <div class="type">
+                                <span>Work Type</span> <br>
+                                <p>Employee</p>
+                            </div>
+                            <div class="doj">
+                                <span>Date Hired</span>
+                                <p>19/03/2023</p>
+                            </div>
+                        </div>
+                        <div class="detbottom">
+                            <p class="mail"><i class="fas fa-envelope"></i>&nbsp; 2021pecit223@gmail.com</p>
+                            <p class="phone"><i class="fas fa-phone"></i>&nbsp; +91 9384460843</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- user 3 -->
+            <div class="user" index="0003">
+                <div class="options">
+                    <div class="opt"><input type="checkbox" name="usercheck" id="usercheck"></div>
+                    <div class="opt"><p class="indicate leave">Leave</p></div>
+                    <div class="opt"><i class="del fas fa-trash delete-icon"></i></div>
+                </div>
+                <div class="mid">
+                    <div class="prof">
+                        <img src="img/female.png" alt="">
+                    </div>
+                    <div class="username">Michelle Amy</div>
+                </div>
+                <div class="bottoms">
+                    <div class="detBox">
+                        <div class="dettop">
+                            <div class="type">
+                                <span>Work Type</span> <br>
+                                <p>Employee</p>
+                            </div>
+                            <div class="doj">
+                                <span>Date Hired</span>
+                                <p>17/08/2023</p>
+                            </div>
+                        </div>
+                        <div class="detbottom">
+                            <p class="mail"><i class="fas fa-envelope"></i>&nbsp; HarishSabari@gmail.com</p>
+                            <p class="phone"><i class="fas fa-phone"></i>&nbsp; +91 9384460843</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- user 4 -->
+            <div class="user" index="0004">
+                <div class="options">
+                    <div class="opt"><input type="checkbox" name="usercheck" id="usercheck"></div>
+                    <div class="opt"><p class="indicate active">Active</p></div>
+                    <div class="opt">
+                        <i class="del fas fa-trash delete-icon"></i>
+                    </div>
+                </div>
+                <div class="mid">
+                    <div class="prof">
+                        <img src="img/male.png" alt="">
+                    </div>
+                    <div class="username">Michael Robert</div>
+                </div>
+                <div class="bottoms">
+                    <div class="detBox">
+                        <div class="dettop">
+                            <div class="type">
+                                <span>Work Type</span> <br>
+                                <p>Daily Wager</p>
+                            </div>
+                            <div class="doj">
+                                <span>Date Hired</span>
+                                <p>29/12/2023</p>
+                            </div>
+                        </div>
+                        <div class="detbottom">
+                            <p class="mail"><i class="fas fa-envelope"></i>&nbsp; Sabariharish@gmail.com</p>
+                            <p class="phone"><i class="fas fa-phone"></i>&nbsp; +91 9384460843</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- user 5 -->
+            <div class="user" index="0005">
+                <div class="options">
+                    <div class="opt"><input type="checkbox" name="usercheck" id="usercheck"></div>
+                    <div class="opt"><p class="indicate ot">OT</p></div>
+                    <div class="opt"><i class="del fas fa-trash delete-icon"></i></div>
+                </div>
+                <div class="mid">
+                    <div class="prof">
+                        <img src="img/female.png" alt="">
+                    </div>
+                    <div class="username">Jessica</div>
+                </div>
+                <div class="bottoms">
+                    <div class="detBox">
+                        <div class="dettop">
+                            <div class="type">
+                                <span>Work Type</span> <br>
+                                <p>Employee</p>
+                            </div>
+                            <div class="doj">
+                                <span>Date Hired</span>
+                                <p>17/08/2023</p>
+                            </div>
+                        </div>
+                        <div class="detbottom">
+                            <p class="mail"><i class="fas fa-envelope"></i>&nbsp; HarishSabari@gmail.com</p>
+                            <p class="phone"><i class="fas fa-phone"></i>&nbsp; +91 9384460843</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- user 6 -->
+            <div class="user" index="0006">
+                <div class="options">
+                    <div class="opt"><input type="checkbox" name="usercheck" id="usercheck"></div>
+                    <div class="opt"><p class="indicate leave">Leave</p></div>
+                    <div class="opt">
+                        <i class="del fas fa-trash delete-icon"></i>
+                    </div>
+                </div>
+                <div class="mid">
+                    <div class="prof">
+                        <img src="img/male.png" alt="">
+                    </div>
+                    <div class="username">Vinoth</div>
+                </div>
+                <div class="bottoms">
+                    <div class="detBox">
+                        <div class="dettop">
+                            <div class="type">
+                                <span>Work Type</span> <br>
+                                <p>Employee</p>
+                            </div>
+                            <div class="doj">
+                                <span>Date Hired</span>
+                                <p>29/12/2023</p>
+                            </div>
+                        </div>
+                        <div class="detbottom">
+                            <p class="mail"><i class="fas fa-envelope"></i>&nbsp; Vinothg0628@gmail.com</p>
+                            <p class="phone"><i class="fas fa-phone"></i>&nbsp; +91 9384460843</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- user 7 -->
+            <div class="user" index="0007">
+                <div class="options">
+                    <div class="opt"><input type="checkbox" name="usercheck" id="usercheck"></div>
+                    <div class="opt"><p class="indicate active">Active</p></div>
+                    <div class="opt">
+                        <i class="del fas fa-trash delete-icon"></i>
+                    </div>
+                </div>
+                <div class="mid">
+                    <div class="prof">
+                        <img src="img/male.png" alt="">
+                    </div>
+                    <div class="username">Harish</div>
+                </div>
+                <div class="bottoms">
+                    <div class="detBox">
+                        <div class="dettop">
+                            <div class="type">
+                                <span>Work Type</span> <br>
+                                <p>Employee</p>
+                            </div>
+                            <div class="doj">
+                                <span>Date Hired</span>
+                                <p>29/12/2023</p>
+                            </div>
+                        </div>
+                        <div class="detbottom">
+                            <p class="mail"><i class="fas fa-envelope"></i>&nbsp; Vinothg0628@gmail.com</p>
+                            <p class="phone"><i class="fas fa-phone"></i>&nbsp; +91 9384460843</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- user 8 -->
+            <div class="user" index="0008">
+                <div class="options">
+                    <div class="opt"><input type="checkbox" name="usercheck" id="usercheck"></div>
+                    <div class="opt"><p class="indicate ot">OT</p></div>
+                    <div class="opt">
+                        <i class="del fas fa-trash delete-icon"></i>
+                    </div>
+                </div>
+                <div class="mid">
+                    <div class="prof">
+                        <img src="img/male.png" alt="">
+                    </div>
+                    <div class="username">Sabari</div>
+                </div>
+                <div class="bottoms">
+                    <div class="detBox">
+                        <div class="dettop">
+                            <div class="type">
+                                <span>Work Type</span> <br>
+                                <p>Daily Wagers</p>
+                            </div>
+                            <div class="doj">
+                                <span>Date Hired</span>
+                                <p>29/12/2023</p>
+                            </div>
+                        </div>
+                        <div class="detbottom">
+                            <p class="mail"><i class="fas fa-envelope"></i>&nbsp; Vinothg0628@gmail.com</p>
+                            <p class="phone"><i class="fas fa-phone"></i>&nbsp; +91 9384460843</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- user 9 -->
+            <div class="user" index="0009">
+                <div class="options">
+                    <div class="opt"><input type="checkbox" name="usercheck" id="usercheck"></div>
+                    <div class="opt"><p class="indicate leave">Leave</p></div>
+                    <div class="opt">
+                        <i class="del fas fa-trash delete-icon"></i>
+                    </div>
+                </div>
+                <div class="mid">
+                    <div class="prof">
+                        <img src="img/male.png" alt="">
+                    </div>
+                    <div class="username">Muthu Kumar</div>
+                </div>
+                <div class="bottoms">
+                    <div class="detBox">
+                        <div class="dettop">
+                            <div class="type">
+                                <span>Work Type</span> <br>
+                                <p>Employee</p>
+                            </div>
+                            <div class="doj">
+                                <span>Date Hired</span>
+                                <p>29/12/2023</p>
+                            </div>
+                        </div>
+                        <div class="detbottom">
+                            <p class="mail"><i class="fas fa-envelope"></i>&nbsp; Vinothg0628@gmail.com</p>
+                            <p class="phone"><i class="fas fa-phone"></i>&nbsp; +91 9384460843</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- user 10 -->
+            <div class="user" index="0010">
+                <div class="options">
+                    <div class="opt"><input type="checkbox" name="usercheck" id="usercheck"></div>
+                    <div class="opt"><p class="indicate active">Active</p></div>
+                    <div class="opt">
+                        <i class="del fas fa-trash delete-icon"></i>
+                    </div>
+                </div>
+                <div class="mid">
+                    <div class="prof">
+                        <img src="img/male.png" alt="">
+                    </div>
+                    <div class="username">Kumar</div>
+                </div>
+                <div class="bottoms">
+                    <div class="detBox">
+                        <div class="dettop">
+                            <div class="type">
+                                <span>Work Type</span> <br>
+                                <p>Employee</p>
+                            </div>
+                            <div class="doj">
+                                <span>Date Hired</span>
+                                <p>29/12/2023</p>
+                            </div>
+                        </div>
+                        <div class="detbottom">
+                            <p class="mail"><i class="fas fa-envelope"></i>&nbsp; Vinothg0628@gmail.com</p>
+                            <p class="phone"><i class="fas fa-phone"></i>&nbsp; +91 9384460843</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- end of details box -->
+        </div>
+
+        <!-- end of conatiner -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

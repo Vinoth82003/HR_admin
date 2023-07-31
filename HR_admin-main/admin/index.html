@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Page</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="sidebar" id="sidebar">
+  <ul class="navbar-nav">
+    <li index="0" class="nav-item ">
+      <a class="btn  mt-3 btn-primary nav-link" href="#"><i class="fas fa-users"></i> &nbsp; All</a>
+    </li>
+    <li index="1" class="nav-item ">
+        <a class="btn  mt-3 btn-success nav-link" href="#"><i class="fas fa-check"></i> &nbsp; Present</a>
+    </li>
+    <li index="2" class="nav-item">
+        <a class="btn  mt-3 btn-danger nav-link" href="#"><i class="fas fa-times"></i> &nbsp; Absent</a>
+    </li>
+  </ul>
+</nav>
+
+<div id="menubtn" class="sidebar-toggle-btn" onclick="toggleSidebar()">
+ 
+</div>
+
+<main role="main" class="container mt-5">
+    <div class="filters">
+        <input placeholder="11-08-2003" type="date" name="from" id="from"> to <input placeholder="15-08-2003" type="date" name="to" id="to">
+
+        <input type="text" name="filter" id="filter" placeholder="eg: 0001 or vinoth">
+    </div>
+  <div class="row justify-content-center">
+    
+    <div class="col-md-8">
+      <table  class="table table-bordered table-hover">
+        <thead>
+          <tr>
+            <th>id</th><!--0-->
+            <th>name</th> <!--1-->
+            <th>attendance</th> <!--2-->
+            <th>dob</th> <!--3-->
+            <th>work type</th> <!--4-->
+            <th>Phone Number</th> <!--5-->
+            <th>Aadhar No</th> <!--6-->
+            <th>Address</th> <!--7-->
+            <th>Gender</th> <!--8-->
+            <th>wages per Day</th> <!--9-->
+            <th>actions</th> <!--10-->
+        </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="id">0001</td>
+            <td class="name">vinoth</td>
+            <td class="attend">present</td>
+            <td class="date">11-08-2003</td>
+            <td class="dept">daily</td>
+            <td class="phnum">9384460843</td>
+            <td class="aadhar">9384 0000 0000</td>
+            <td class="address">#1234, north street , chennai, tamilnadu</td>
+            <td class="gender">male</td>
+            <td class="wage">750</td>
+            <td class="action-btn">
+              <button class="btn btn-danger btn-sm delete-btn">Delete</button>
+              <button class="btn btn-primary btn-sm edit-btn">Edit</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="id">0012</td>
+            <td class="name">sabari</td>
+            <td class="attend">absent</td>
+            <td class="date">09-08-2003</td>
+            <td class="dept">employee</td>
+            <td class="phnum">9384460843</td>
+            <td class="aadhar">9384 0000 0000</td>
+            <td class="address">#1234, north street , chennai, tamilnadu</td>
+            <td class="gender">male</td>
+            <td class="wage">1000</td>
+            <td class="action-btn">
+              <button class="btn btn-danger btn-sm delete-btn">Delete</button>
+              <button class="btn btn-primary btn-sm edit-btn">Edit</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="id">0113</td>
+            <td class="name">harish</td>
+            <td class="attend">present</td>
+            <td class="date">15-08-2003</td>
+            <td class="dept">daily</td>
+            <td class="phnum">9384460843</td>
+            <td class="aadhar">9384 0000 0000</td>
+            <td class="address">#1234, north street , chennai, tamilnadu</td>
+            <td class="gender">male</td>
+            <td class="wage">750</td>
+            <td class="action-btn">
+              <button class="btn btn-danger btn-sm delete-btn">Delete</button>
+              <button class="btn btn-primary btn-sm edit-btn">Edit</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="id">1114</td>
+            <td class="name">muthu kumar</td>
+            <td class="attend">absent</td>
+            <td class="date">01-08-2003</td>
+            <td class="dept">employee</td>
+            <td class="phnum">9384460843</td>
+            <td class="aadhar">9384 0000 0000</td>
+            <td class="address">#1234, north street , chennai, tamilnadu</td>
+            <td class="gender">male</td>
+            <td class="wage">1000</td>
+            <td class="action-btn">
+              <button class="btn btn-danger btn-sm delete-btn">Delete</button>
+              <button class="btn btn-primary btn-sm edit-btn">Edit</button>
+            </td>
+          </tr>
+
+          <!-- ..diff month datas.. -->
+          <tr>
+            <td class="id">1001</td>
+            <td class="name">s vinoth</td>
+            <td class="attend">present</td>
+            <td class="date">11-07-2003</td>
+            <td class="dept">daily</td>
+            <td class="phnum">9384460843</td>
+            <td class="aadhar">9384 0000 0000</td>
+            <td class="address">#1234, north street , chennai, tamilnadu</td>
+            <td class="gender">male</td>
+            <td class="wage">750</td>
+            <td class="action-btn">
+              <button class="btn btn-danger btn-sm delete-btn">Delete</button>
+              <button class="btn btn-primary btn-sm edit-btn">Edit</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="id">1012</td>
+            <td class="name">v sabari</td>
+            <td class="attend">absent</td>
+            <td class="date">09-07-2003</td>
+            <td class="dept">employee</td>
+            <td class="phnum">9384460843</td>
+            <td class="aadhar">9384 0000 0000</td>
+            <td class="address">#1234, north street , chennai, tamilnadu</td>
+            <td class="gender">male</td>
+            <td class="wage">1000</td>
+            <td class="action-btn">
+              <button class="btn btn-danger btn-sm delete-btn">Delete</button>
+              <button class="btn btn-primary btn-sm edit-btn">Edit</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="id">1113</td>
+            <td class="name">v harish</td>
+            <td class="attend">present</td>
+            <td class="date">15-07-2003</td>
+            <td class="dept">daily</td>
+            <td class="phnum">9384460843</td>
+            <td class="aadhar">9384 0000 0000</td>
+            <td class="address">#1234, north street , chennai, tamilnadu</td>
+            <td class="gender">male</td>
+            <td class="wage">750</td>
+            <td class="action-btn">
+              <button class="btn btn-danger btn-sm delete-btn">Delete</button>
+              <button class="btn btn-primary btn-sm edit-btn">Edit</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="id">2114</td>
+            <td class="name">s muthu kumar</td>
+            <td class="attend">absent</td>
+            <td class="date">01-07-2003</td>
+            <td class="dept">employee</td>
+            <td class="phnum">9384460843</td>
+            <td class="aadhar">9384 0000 0000</td>
+            <td class="address">#1234, north street , chennai, tamilnadu</td>
+            <td class="gender">male</td>
+            <td class="wage">1000</td>
+            <td class="action-btn">
+              <button class="btn btn-danger btn-sm delete-btn">Delete</button>
+              <button class="btn btn-primary btn-sm edit-btn">Edit</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</main>
+<div class="module">
+  <form action="" class="editform">
+    <div class="half">
+      <div class="inputField">
+        <label for="empid">EmpId : </label>
+        <input type="text" name="empid" id="empid" readonly>
+      </div>
+      <div class="inputField">
+        <label for="uname">Name : </label>
+        <input type="text" name="uname" id="uname" >
+      </div>
+      <div class="inputField">
+        <label for="dob">DOB : </label>
+        <input type="date" name="dob" id="dob" >
+      </div>
+      <div class="inputField">
+        <label for="worktype">work type : </label>
+        <select name="worktype" id="worktype">
+          <option value="">select </option>
+          <option value="daily">daily </option>
+          <option value="employee">employee </option>
+        </select>
+      </div>
+      <div class="inputField">
+        <label for="attend">attendance : </label>
+        <select name="attend" id="attend">
+          <option value="">select </option>
+          <option value="present">present </option>
+          <option value="absent">Absent </option>
+        </select>
+      </div>
+    </div>
+   <div class="half">
+    <div class="inputField">
+      <label for="Phnumber">Phone number : </label>
+      <input type="number" name="Phnumber" id="Phnumber" >
+    </div>
+    <div class="inputField">
+      <label for="aadhar">Aadhar No : </label>
+      <input type="tel" name="aadhar" id="aadhar" >
+    </div>
+    <div class="inputField">
+      <label for="address">Address : </label>
+      <textarea name="address" id="address" cols="30" rows="2"></textarea>
+    </div>
+    <div class="inputField">
+      <label for="gender">Gender : </label>
+      <select name="gender" id="gender">
+        <option value="">select </option>
+        <option value="male">male </option>
+        <option value="female">female </option>
+      </select>
+    </div>
+   </div>
+    <button class="btn btn-primary editSubmit" onclick="change() " type="button">Change</button>
+  </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
+
