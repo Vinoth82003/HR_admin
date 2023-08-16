@@ -1,0 +1,23 @@
+.attendBtns{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    /* background: #c9ffc9;
+    background: #ffb9b9;
+    color: #700707;
+    color: #043a04; */
+
+}
+
+.fa-check{
+    color: #fff;
+}
+
+.prevNxtBtn{
+    display: flex;
+    gap:  20px;
+}
