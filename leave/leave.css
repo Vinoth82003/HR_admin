@@ -123,6 +123,7 @@ li{
     border: 1px solid #000;
     display: flex;
     /* display: block; */
+    border-radius:5px;
 }
 
 .divSection{
