@@ -169,3 +169,26 @@ li{
     color: #fff;
     margin: 10px;
 }
+
+@media screen and (max-width:425px) {
+    .profileSection.active {
+        width: 91%;
+        height: 70%;
+        border: 1px solid #000;
+        display: flex;
+        flex-direction: column;
+        margin-top: 120px;
+    }
+
+    .closeProf {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        background: #000;
+        color: #fff;
+        margin: 10px;
+    }
+}
