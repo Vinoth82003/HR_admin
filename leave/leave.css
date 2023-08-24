@@ -193,6 +193,7 @@ li{
     margin-top: 105px;
     background-image: url("https://th.bing.com/th/id/OIP.KT4M9QWgbtNSS6-Xpe1s9wHaLH?pid=ImgDet&rs=1");
     background-size: 100%;
+    overflow:hidden;
 }
 
 .leave{
