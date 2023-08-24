@@ -63,6 +63,8 @@ const user = {
 
 }
 
+user.ID = document.querySelector(".uid").innerHtml;
+
 function checkInputType(input) {
     if (!isNaN(parseFloat(input)) && isFinite(input)) {
       return 'Number';
