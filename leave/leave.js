@@ -63,7 +63,7 @@ const user = {
 
 }
 
-user.ID = document.querySelector(".uid").innerHtml;
+user.ID = document.querySelector('.uid').innerHTML;
 console.log(user);
 
 function checkInputType(input) {
