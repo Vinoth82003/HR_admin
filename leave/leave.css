@@ -220,7 +220,6 @@ input,textarea{
     border-radius: 5px;
     width: 100%;
     border: 1px solid #fcd3d3d7;
-    background: transparent;
 }
 
 input[type='radio']{
