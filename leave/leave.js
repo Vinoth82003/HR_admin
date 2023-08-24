@@ -64,6 +64,7 @@ const user = {
 }
 
 user.ID = document.querySelector(".uid").innerHtml;
+console.log(user);
 
 function checkInputType(input) {
     if (!isNaN(parseFloat(input)) && isFinite(input)) {
