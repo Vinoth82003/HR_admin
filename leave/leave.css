@@ -117,6 +117,7 @@ li{
     background: url("https://cdn.wallpapersafari.com/55/41/nISvbA.jpg");
     color: #fff;
     border-radius: 5px;
+    overflow:hidden;
 }
 
 .divSection{
