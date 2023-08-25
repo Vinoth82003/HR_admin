@@ -349,6 +349,7 @@ display: flex;
     color: #fff;
     border-radius: 6px;
     overflow: hidden;
+    padding:10px;
 }
 
 .inputfield {
