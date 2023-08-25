@@ -256,7 +256,7 @@ display: flex;
 @media screen and (max-width:425px) {
     .profileSection.active {
     width: 91%;
-    height: 415px;
+    height: 515px;
     display: flex;
     flex-direction: column;
     /* margin-top: 110px; */
