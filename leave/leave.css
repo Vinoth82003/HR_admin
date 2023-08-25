@@ -260,12 +260,14 @@ display: flex;
 
 @media screen and (max-width:425px) {
     .profileSection.active {
-        width: 91%;
-        height: 70%;
-        display: flex;
-        flex-direction: column;
-        margin-top: 110px;
-    }
+    width: 91%;
+    height: 415px;
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 110px; */
+    position: absolute;
+    top: 115px;
+  }
 
     .detailsList {
         width: 75%;
