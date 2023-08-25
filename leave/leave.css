@@ -236,13 +236,6 @@ display: flex;
   display: block;
 }
 
-@media screen and (max-width:1440px) {
-    .profileSection.active {
-        width: 80%;
-        height: 55%;
-    }
-}
-
 @media screen and (max-width:768px) {
     .profileSection.active {
         width: 90%;
