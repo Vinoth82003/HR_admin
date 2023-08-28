@@ -8,6 +8,7 @@ const otherRadioInputs = document.querySelectorAll('input[type="radio"]');
 const otherTextArea = document.querySelector('.other');
 const otherOption = document.getElementById("other");
 
+// textarea enable and disable function..
 otherRadioInputs.forEach(radio => {
     radio.addEventListener('click',function(){
         if (otherOption.checked == true) {
