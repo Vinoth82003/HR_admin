@@ -12,7 +12,7 @@ submit.addEventListener("click", function () {
   var pass = password.value;
 
   if (name === "" || uname === undefined) {
-    error.innerHTML = `<p class="msg">username is requiered</p>`;
+    error.innerHTML = `<p class="msg">Email is requiered</p>`;
   } else if (pass === "" || pass === undefined) {
     error.innerHTML = `<p class="msg">password is requiered</p>`;
   } else {
